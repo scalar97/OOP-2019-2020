@@ -7,6 +7,21 @@ import java.util.Random;
 
 public class BugZap extends PApplet
 {
+    int score;
+
+    float playerX = 450;
+    float playerY = 790; 
+    float playerWidth = 50; 
+    float halfPlayerwidth = playerWidth/2;
+
+    //delcaring bug attributes
+    float bugX = 100;
+    float bugY = 100;
+    float bugWidth = 40;
+    float halfBugWidth = bugWidth / 2;
+
+
+
     public void settings()
     {
         size(900,900);
@@ -21,34 +36,25 @@ public class BugZap extends PApplet
 
         background(255);
         drawPlayer(playerX, playerY, playerWidth);
-        if ((frameCount % 60) == 0){
-            
-            drawBug(bugX,bugY,bugWidth);
-        }
+    
+        drawBug(bugX,bugY,bugWidth);
+
+        moveBug();
+        
+        drawScore();
         
     }
 
-    float playerX = 450;
-    float playerY = 790; 
-    float playerWidth = 50; 
-    float bugX = 10;
-    float bugY = 10;
-    float bugWidth = 10;
-    // create instance of Random class 
-    Random rand = new Random();
+    void drawPlayer(final float x, final float y, float w) {
 
-    void drawPlayer(float x, float y, float w){
-
-        float h = w/2;
-
-        x = x + 20;
+        final float h = w / 2;
 
         w = w * 0.5f;
 
-        stroke(51,204,255);
+        stroke(51, 204, 255);
 
-        fill(0,0,0);
-        ellipse(x,y,w,h);
+        fill(0, 0, 0);
+        ellipse(x, y, w, h);
 
     }
 
@@ -76,27 +82,67 @@ public class BugZap extends PApplet
         }
         
 		if (key == ' ')
-		{
-            //not working 
+		{ 
             fill(51,204,255);
             line(playerX, playerY, playerX, 0);
             
+			if ((playerX-halfPlayerwidth) < bugX && playerX < (bugX-bugWidth))
+            {
+                resetBug();
+                score++;
+
+            }
 		}
-	}
+    }
 
-    void drawBug(float x, float y, float w){
+    void test(int x) {
+        x = 1000000;
+    }
 
-        float h = w;
+    void drawBug(final float x, final float y, final float w) {
 
-        x = rand.nextInt(900);
-
-        y = rand.nextInt(900);
+        final float h = w;
 
         stroke(0, 0, 0);
 
         fill(0,0,0);
         
         rect(x,y,w,h);
+        test(100);
 
     }
+
+    void moveBug(){
+        
+        if (frameCount % 15 == 0){
+
+            bugX = bugX + random(-5, 5);
+        
+            bugY = bugY + 1;
+
+        }
+
+    }
+
+
+    void reset()
+	{
+		resetBug();
+		playerX = width / 2;
+		playerY = height - 50;
+	}
+
+    void resetBug()
+	{
+		bugX = random(halfBugWidth, width - halfBugWidth);
+		bugY = 50;
+    }
+    
+    void drawScore(){
+        textSize(14);
+        text("Score:"+ score, 750,50);
+        fill(0,0,0);
+
+    }
+
 }
