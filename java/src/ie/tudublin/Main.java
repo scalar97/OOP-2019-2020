@@ -43,10 +43,6 @@ public class Main
         Main main = new Main();
 		main.airSeaBattle();
         
-        a.setName("c");
-
-        System.out.println(a);
-        System.out.println(b);
 
 
     }

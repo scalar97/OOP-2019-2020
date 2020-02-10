@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bf5f309e-17d7-478a-bebb-921308763ff5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/java/src/ie/tudublin/BugZap.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/ie/tudublin/BugZap.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1XROil05tAvbry0Z0fBtFGzTNaM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="BugZap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ie.tudublin.BugZap" />
+      <module name="OOP-2019-2020" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ie.tudublin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.BugZap" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bf5f309e-17d7-478a-bebb-921308763ff5" name="Default Changelist" comment="" />
+      <created>1581005569695</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581005569695</updated>
+      <workItem from="1581005575524" duration="152000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1342" height="241" key="GridCell.Tab.0.bottom" timestamp="1581005726747">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state width="1342" height="241" key="GridCell.Tab.0.bottom/0.0.1504.963@0.0.1504.963" timestamp="1581005726747" />
+    <state width="1342" height="241" key="GridCell.Tab.0.center" timestamp="1581005726746">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state width="1342" height="241" key="GridCell.Tab.0.center/0.0.1504.963@0.0.1504.963" timestamp="1581005726746" />
+    <state width="1342" height="241" key="GridCell.Tab.0.left" timestamp="1581005726746">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state width="1342" height="241" key="GridCell.Tab.0.left/0.0.1504.963@0.0.1504.963" timestamp="1581005726746" />
+    <state width="1342" height="241" key="GridCell.Tab.0.right" timestamp="1581005726747">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state width="1342" height="241" key="GridCell.Tab.0.right/0.0.1504.963@0.0.1504.963" timestamp="1581005726747" />
+    <state x="460" y="311" key="com.intellij.ide.util.TipDialog" timestamp="1581005586509">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state x="460" y="311" key="com.intellij.ide.util.TipDialog/0.0.1504.963@0.0.1504.963" timestamp="1581005586509" />
+  </component>
+</project>
