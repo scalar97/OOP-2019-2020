@@ -2,30 +2,37 @@ package ie.tudublin;
 
 public class Animal
 {
-    // Field
     private String name;
 
-    public Animal(String name){
+    // Constructor
+    // Same name as the class
+    // No return type
+    // If you dont add one, you get a default one 
+    public Animal(String name)
+    {
         setName(name);
     }
 
-    //Get Name Method to get name 
+
     public String getName()
     {
         return name;
     }
 
-    // Accessors Method (Function) to allow other classes to access the private variables
     public void setName(String name)
     {
-        //this is the self in python 
         this.name = name;
     }
-    
+
     public void speak()
     {
-        System.out.println("I can't speak!!");
+        System.out.println("I cant speak!");
     }
 
-
+    // This gets called automatically whenever the object 
+    // needs to be converted to a string
+    public String toString()
+    {
+        return getName();
+    }
 }
