@@ -45,12 +45,9 @@ public class Arrays extends PApplet
 		
 	}
 
-	
 
 	float offset = 0;
 
-	
-	
 	public void keyPressed()
 	{
 		if (key == ' ')
@@ -64,5 +61,25 @@ public class Arrays extends PApplet
 	{	
 		background(0);		
 		colorMode(HSB);	
+
+		drawBarChart();
 	}
+
+	void drawBarChart(){
+		float w = width / rainFall.length;
+		float cGap = 255/rainFall.length;
+
+		colorMode(HSB);
+		for(int i= 0; i< rainFall.length; i++)
+		{
+			float x = i *w;
+			fill (i * cGap, 255, 255);
+			rect(x, height, w, -rainFall[i]);
+		}
+	}
+
+	void test(){
+
+	}
+	
 }
