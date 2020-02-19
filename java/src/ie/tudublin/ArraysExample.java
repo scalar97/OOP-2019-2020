@@ -91,15 +91,18 @@ public class ArraysExample extends PApplet
 			float y1 = map(rainFall[i-1], 0, 150, height - border, border);
 			float y2 = map(rainFall[i], 0, 150, height - border, border);
 			line(x1, y1, x2, y2);
-			
-			
+
 		}
 		
 		for (int j = 0 ; j < 160; j+=10){
 
+			//needs adjustment
 			float y = map(j,0,150,height - border,border);
 
+			line(margin, height, margin, 0);
+
 			text(j, 0, y);
+			text('-', margin, y);
 
 		}
 		
