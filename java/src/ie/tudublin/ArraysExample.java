@@ -76,6 +76,35 @@ public class ArraysExample extends PApplet
 		}
 	}
 
+	void drawGraph()
+	{
+		stroke(255);
+		float border = height *0.05f;
+		float margin = width *0.05f;
+	
+		for(int i = 1 ; i < rainFall.length ; i ++)
+		{
+			float x1 = map(i-1,0,rainFall.length,margin, width);
+			float x2 = map(i,0,rainFall.length,margin, width);
+			
+			
+			float y1 = map(rainFall[i-1], 0, 150, height - border, border);
+			float y2 = map(rainFall[i], 0, 150, height - border, border);
+			line(x1, y1, x2, y2);
+			
+			
+		}
+		
+		for (int j = 0 ; j < 160; j+=10){
+
+			float y = map(j,0,150,height - border,border);
+
+			text(j, 0, y);
+
+		}
+		
+	}
+
 	public void keyPressed()
 	{
 		if (key == ' ')
@@ -89,6 +118,8 @@ public class ArraysExample extends PApplet
 		background(0);		
 		colorMode(HSB);	
 
-		drawBarChart();
+		//drawBarChart();
+
+		drawGraph();
 	}
 }
